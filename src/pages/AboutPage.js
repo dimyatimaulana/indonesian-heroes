@@ -36,7 +36,7 @@ function AboutPage() {
               <a href="https://indonesia-public-static-api.vercel.app/api/heroes">see here</a>
             </li>
             <li>
-              Athor REST API:
+              Secondary REST API:
               {' '}
               <a href="https://19104008-mhs.bdv.or.id/api/heroes.php">see here</a>
             </li>
