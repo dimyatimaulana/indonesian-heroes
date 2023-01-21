@@ -1,38 +1,62 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  font-family: 'Poppins', sans-serif;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #fe3939;
+  z-index: 3;
+}
+
+.menu {
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+ul {
+  display: contents;
+}
+
+.menu ul li {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  min-width: 150px;
+  height: 70px;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+footer {
+  margin-top: 50px;
+  border-top: 1px solid #E0E0E0;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* RESPONSIVE */
+
+@media screen and (max-width: 700px) {
+  .jumbotron p {
+    font-size: 24px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width: 500px) {
+  .jumbotron p {
+    font-size: 18px;
+  }
+  .menu ul li {
+    min-width: 100px;
+    flex-direction: column;
+    max-width: 150px;
   }
 }

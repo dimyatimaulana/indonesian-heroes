@@ -1,0 +1,107 @@
+.aboutpage-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80vw;
+    padding: 20px 0;
+    margin: auto;
+}
+
+h1 {
+    margin-left: 35px;
+    margin-inline-end: auto;
+    text-align: start;
+}
+
+.section1 {
+    display: flex;
+    gap: 50px;
+}
+
+.section1 a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+.profile-picture img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.profile-picture img:hover {
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    transition-property: all;
+    transform: scale(1.1);
+}
+
+.about-indonesian-heroes ul li{
+    list-style: none;
+}
+
+.member-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.member-info h3, .member-info p {
+    margin: 0;
+    font-size: 16px;
+}
+.member-info h3:hover {
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    transition-property: all;
+    transform: scale(1.1);
+}
+
+.social-media {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.social-media a {
+    display: flex;
+    min-height: 30px;
+    min-width: 30px;
+    color: #212529;
+    margin-top: 10px;
+}
+
+.social-media a svg {
+    padding-left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.social-media a svg:hover {
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    transition-property: all;
+    transform: scale(1.1);
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 700px) {
+    .profile-picture img {
+      width: 250px;
+      height: 250px;
+    }
+
+    .section1 {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .section1 {
+        flex-direction: column;
+    }
+}
