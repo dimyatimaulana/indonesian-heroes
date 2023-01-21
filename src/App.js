@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import React, { useState, useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 import api from './utils/api';
 import Homepage from './pages/Homepage';
 import SearchPage from './pages/SearchPage';
@@ -29,9 +29,9 @@ function App() {
       <header className="App-header">
         <nav className="menu">
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/search">Search Page</a></li>
-            <li><a href="/about">About</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/search">Search</Link></li>
+            <li><Link to="/about">About</Link></li>
           </ul>
         </nav>
       </header>
