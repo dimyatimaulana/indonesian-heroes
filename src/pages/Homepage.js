@@ -1,22 +1,12 @@
+/* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/jsx-no-bind */
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import api from '../utils/api';
-import CardsList from '../components/card/CardsList';
+import CardList from '../components/card/CardsList';
+import Button from '../components/buttons/Button';
+import '../styles/Homepage.css';
 
-function Homepage() {
-  const onLoad = async () => {
-    const response = api.getHeroes();
-    return response;
-  };
-
-  useEffect(() => {
-    onLoad();
-  }, []);
-
-  const [heroes] = useState(onLoad);
-  console.log(heroes);
-
+function Homepage(heroes) {
   // const onClick = (heroes) => {
   //   const listContainer = document.querySelector('.cards-list-container');
   //   listContainer.innerHTML = <CardsList heroes={heroes} />;
@@ -24,15 +14,14 @@ function Homepage() {
 
   return (
     <div className="page-container">
-      <div>
+      <div className="jumbotron center">
         <p>Daftar para Pahlawan dari Indonesia</p>
       </div>
-      <div className="menu-container">
-        <button tabIndex={0} type="button">Lihat daftar pahlawan</button>
-        <button type="button"><Link to="/search">Cari pahlawan</Link></button>
+      <div className="menu-container center">
+        <Link to="/search"><Button /></Link>
       </div>
       <div className="cards-list-container">
-        <CardsList heroes={heroes} />
+        <CardList heroes={heroes.heroes} />
       </div>
     </div>
   );
