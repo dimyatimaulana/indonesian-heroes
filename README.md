@@ -7,6 +7,8 @@ Front end : React, uiverse.io\
 Rest api 1 : https://indonesia-public-static-api.vercel.app/api/heroes \
 Rest api 2 : https://19104008-mhs.bdv.or.id/api/heroes.php
 
+deployed link : https://pahlawan-indonesia.netlify.app
+
 ## How to run
 
 You must install all dependencies
